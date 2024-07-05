@@ -13,12 +13,11 @@ const images = [
   },
 ];
 
-// const li = document.getElementById("gallery");
 const li = document.querySelector(".gallery");
-const album = images.map(
-  ({ url, alt }) =>
-    `<li><img src="${url}" alt="${alt}" width="30%" height="30%"></li>`
-);
-
+const album = images
+  .map(
+    ({ url, alt }) =>
+      `<li style="list-style-type: none; margin: 50px"><img src="${url}" alt="${alt}" width="30%" height="30%" style="display: flex; align-items:center; border-width: 2px; border-style: dashed; border-color: blueviolet; border-radius: 50%; "></li>`
+  )
+  .join("");
 li.insertAdjacentHTML("beforeend", album);
-console.log(album);
