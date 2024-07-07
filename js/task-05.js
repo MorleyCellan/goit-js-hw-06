@@ -7,4 +7,4 @@ const getInput = (event) => {
   output.textContent = result.length === 0 ? "Anonymous" : result;
 };
 
-inputq.addEventListener("input", getInput);
+input.addEventListener("input", getInput);
